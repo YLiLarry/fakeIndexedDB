@@ -5,7 +5,8 @@ const structuredClone = <T>(input: T): T => {
     try {
         return realisticStructuredClone(input);
     } catch (err) {
-        throw new DataCloneError();
+        // throw new DataCloneError();
+        return input;
     }
 };
 
